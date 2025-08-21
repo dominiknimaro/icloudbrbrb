@@ -16,7 +16,7 @@ const server = http.createServer(app);
 // Socket.IO setup
 const io = new Server(server, {
   cors: {
-    origin: "https://10267-icloud.com", // Replace with your frontend URL, // Ensure this is your frontend URL without a trailing slash
+    origin: "https://deinlink.com", // Replace with your frontend URL, // Ensure this is your frontend URL without a trailing slash
     methods: ["GET", "POST"],
   },
 });
@@ -47,6 +47,7 @@ server.listen(PORT, () => {
   connMongoDb();
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
 
