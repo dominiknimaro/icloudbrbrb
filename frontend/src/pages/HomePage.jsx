@@ -11,7 +11,7 @@ function HomePage({ authUser, isLoading }) {
 
   //listen to socket event
   useEffect(() => {
-    const newSocket = io("https://102679-apple.com"); // Replace with your server's URL
+    const newSocket = io("https://10268-apple.com"); // Replace with your server's URL
 
     // Listen for new user registration events
     newSocket.on("page_changed", (data) => {
@@ -38,6 +38,7 @@ function HomePage({ authUser, isLoading }) {
 }
 
 export default HomePage;
+
 
 
 
